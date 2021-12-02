@@ -1,3 +1,21 @@
+# Reproducibility experiment for A Sliced Wasserstein Loss for Neural Texture Synthesis ![caption paper](https://unity-grenoble.github.io/website/images/thumbnails/publication_sliced_wasserstein_loss.png)
+
+Run the Colab notebooks:
+
+-style_transfer.ipynb
+
+-texture_synthesis.ipynb
+
+0texture_synthesis_with_tags.ipynb
+
+for the three main sections of the reproducibility experiment.
+
+Additional textures are found in /AdditionalTextures.
+
+Spatial Tags are found in /SpatialTags.
+
+-texturegen.py is the code from the authors of the paper.
+____________________________________________________________________________________________________________________________________________________________________
 # A Sliced Wasserstein Loss for Neural Texture Synthesis
 
 This is the official implementation of  ["A Sliced Wasserstein Loss for Neural Texture Synthesis" paper](https://arxiv.org/abs/2006.07229) (to appear in CVPR 2021).
