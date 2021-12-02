@@ -10,7 +10,7 @@ Run the Colab notebooks:
 
 for the three main sections of the reproducibility experiment. Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
 
-The layers we used for feature extraction are:
+The layers from the custom pretrained VGG19 we used for feature extraction are:
          ['block1_conv1',
           'block1_conv2',
           'block2_conv1',
