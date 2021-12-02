@@ -10,9 +10,7 @@ Run the Colab notebooks:
 
 for the three main sections of the reproducibility experiment.
 
-Additional textures are found in /AdditionalTextures.
-
-Spatial Tags are found in /SpatialTags.
+Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
 
 -texturegen.py is the code from the authors of the paper.
 ____________________________________________________________________________________________________________________________________________________________________
