@@ -8,9 +8,24 @@ Run the Colab notebooks:
 
 -texture_synthesis_with_tags.ipynb
 
-for the three main sections of the reproducibility experiment.
+for the three main sections of the reproducibility experiment. Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
 
-Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
+The layers we used for feature extraction are:
+         ['block1_conv1',
+          'block1_conv2',
+          'block2_conv1',
+          'block2_conv2',
+          'block3_conv1', 
+          'block3_conv2',
+          'block3_conv3',
+          'block3_conv4',
+          'block4_conv1', 
+          'block4_conv2',
+          'block4_conv3',
+          'block4_conv4',
+          'block5_conv1',
+          'block5_conv2'
+          ]
 
 -texturegen.py is the code from the authors of the paper.
 ____________________________________________________________________________________________________________________________________________________________________
