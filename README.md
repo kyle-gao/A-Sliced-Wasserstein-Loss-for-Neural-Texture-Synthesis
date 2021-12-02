@@ -1,4 +1,4 @@
-# Reproducibility experiment for A Sliced Wasserstein Loss for Neural Texture Synthesis ![caption paper](https://unity-grenoble.github.io/website/images/thumbnails/publication_sliced_wasserstein_loss.png)
+# Reproducibility experiment for A Sliced Wasserstein Loss for Neural Texture Synthesis
 
 Run the Colab notebooks:
 
