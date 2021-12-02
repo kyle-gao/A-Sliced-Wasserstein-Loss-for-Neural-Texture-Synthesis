@@ -26,6 +26,7 @@ The layers from the custom pretrained VGG19 we used for feature extraction are:
           'block5_conv1',
           'block5_conv2'
           ]
+unless otherwise stated in the code.
 
 -texturegen.py is the code from the authors of the paper.
 ____________________________________________________________________________________________________________________________________________________________________
