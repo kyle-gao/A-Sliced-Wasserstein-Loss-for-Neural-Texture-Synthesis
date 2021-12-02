@@ -6,7 +6,7 @@ Run the Colab notebooks:
 
 -texture_synthesis.ipynb
 
-0texture_synthesis_with_tags.ipynb
+-texture_synthesis_with_tags.ipynb
 
 for the three main sections of the reproducibility experiment.
 
