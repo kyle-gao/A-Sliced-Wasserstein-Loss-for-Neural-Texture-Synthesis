@@ -12,7 +12,7 @@ For texture synthesis with user defined tags we modify the VGG feature extractor
 
 Style transfer: (style_transfer.ipynb)
 
-The implementation in the style transfer notebook is mostly the same as texture synthesis, except we omit, the only differences are slight variations in the fitting and loss functions to allow for the input of a content image. This notebook compares the loss functions on style transfer, the authors custom VGG and the Keras default, and the effect of using more vs less VGG layers in the loss function.
+The implementation in the style transfer notebook is mostly the same as texture synthesis, except we omit, the only differences are slight variations in the fitting and loss functions to allow for the input of a content image. This notebook compares the loss functions on style transfer, the original authors' custom VGG and the Keras default, and the effect of using more vs less VGG layers in the loss function.
 
 Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
 
