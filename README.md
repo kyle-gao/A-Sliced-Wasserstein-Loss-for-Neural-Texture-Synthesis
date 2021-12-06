@@ -1,14 +1,20 @@
 # Reproducibility experiment for A Sliced Wasserstein Loss for Neural Texture Synthesis
 
-Run the Colab notebooks:
+For the coding portion of the project we added 3 jupyter notebooks that tackle 3 different problems proposed in the paper; 1) texture synthesis, 2) texture synthesis with user defined tags, and 3) style transfer
 
--style_transfer.ipynb
+Texture synthesis: (texture_synthesis.ipynb)
 
--texture_synthesis.ipynb
+For texture synthesis we reimplement the authors Lsw code and optimization using the L-BFGS optimizer in scipy. We also implement and test various wrapping methods for the input images. After testing the Lsw implementation, the gram matrix loss is implemented to compare loss functions. After this we also implement the loss functions in a way that they can be used with tensorflows Adam optimizer, we then test optimizing with the Adam optimizer.
 
--texture_synthesis_with_tags.ipynb
+Texture synthesis with user defined tags: (texture_synthesis_with_tags.ipynb)
 
-for the three main sections of the reproducibility experiment. Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
+For texture synthesis with user defined tags we modify the VGG feature extractor to concatenate the tag to the end of the feature space. We also modify the loss and fitting functions to take the input and desired output tag. We then test this method on the images the authors used in their paper.
+
+Style transfer: (style_transfer.ipynb)
+
+The implementation in the style transfer notebook is mostly the same as texture synthesis, except we omit, the only differences are slight variations in the fitting and loss functions to allow for the input of a content image. This notebook compares the loss functions on style transfer, the authors custom VGG mode and the default, and the effect of using more vs less VGG layers in the loss function.
+
+Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
 
 The layers from the custom pretrained VGG19 we used for feature extraction are:
          ['block1_conv1',
