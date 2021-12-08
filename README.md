@@ -14,7 +14,8 @@ Style transfer: (style_transfer.ipynb)
 
 The implementation in the style transfer notebook was mostly the same as texture synthesis. The only differences were slight variations in the fitting and loss functions to allow for the input of a content image. This notebook compared the loss functions on style transfer, the original authors' custom VGG and the Keras default, and the effect of using more vs less VGG layers in the loss function.
 
-Additional textures are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
+Our helper functions which are required to run the notebooks are found in helper.py and decoders.py.
+Additional textures used in our experiments are found in /AdditionalTextures. Spatial Tags are found in /SpatialTags.
 
 The layers from the custom pretrained VGG19 we used for feature extraction are:
          ['block1_conv1',
@@ -34,7 +35,7 @@ The layers from the custom pretrained VGG19 we used for feature extraction are:
           ]
 unless otherwise stated in the code.
 
--texturegen.py is the code from the authors of the paper. The code does texture synthsis with output image of the same size as input image (hardcoded to 256, passing other sizes does not work as argument)
+-texturegen.py is the code from the authors of the paper. The code does texture synthsis with output image of the same size as input image (The original authors' code was hardcoded to 256, passing other sizes does not work as argument due to how vgg_customized.h5 was saved.)
 ____________________________________________________________________________________________________________________________________________________________________
 # A Sliced Wasserstein Loss for Neural Texture Synthesis
 
