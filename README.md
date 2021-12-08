@@ -8,7 +8,7 @@ For texture synthesis we reimplemented the authors Lsw code and optimization usi
 
 Texture synthesis with user defined tags: (texture_synthesis_with_tags.ipynb)
 
-For texture synthesis with user defined tags we modified the VGG feature extractor to concatenate the tag to the end of the feature space. We also modified the loss and fitting functions to take the input and desired output tag. We then tested this method on the images the authors used in their paper.
+For texture synthesis with user defined tags we modified the VGG feature extractor to downsample and concatenate the tag to the end of the feature space for each of the feature layer outputs. We also modified the loss and fitting functions to take the input and desired output tag. We then tested this method on the images the authors used in their paper after extracting them manually and after some preprocessing steps.
 
 Style transfer: (style_transfer.ipynb)
 
@@ -34,7 +34,7 @@ The layers from the custom pretrained VGG19 we used for feature extraction are:
           ]
 unless otherwise stated in the code.
 
--texturegen.py is the code from the authors of the paper.
+-texturegen.py is the code from the authors of the paper. The code does texture synthsis with output image of the same size as input image (hardcoded to 256, passing other sizes does not work as argument)
 ____________________________________________________________________________________________________________________________________________________________________
 # A Sliced Wasserstein Loss for Neural Texture Synthesis
 
