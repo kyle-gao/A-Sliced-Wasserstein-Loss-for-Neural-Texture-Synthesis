@@ -35,7 +35,7 @@ The layers from the custom pretrained VGG19 we used for feature extraction are:
           ]
 unless otherwise stated in the code.
 
--texturegen.py is the code from the authors of the paper. The code does texture synthsis with output image of the same size as input image (The original authors' code was hardcoded to 256, passing other sizes does not work as argument due to how vgg_customized.h5 was saved.)
+-texturegen.py is the code from the authors of the paper. The code does texture synthsis with output image of the same size as input image (The original authors' code was hardcoded to 256; passing other sizes does not work as argument due to how vgg_customized.h5 was saved.)
 ____________________________________________________________________________________________________________________________________________________________________
 # A Sliced Wasserstein Loss for Neural Texture Synthesis
 
